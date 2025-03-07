@@ -1,0 +1,72 @@
+Heap after push: 0 
+Heap after push: 0 0 
+Heap after push: 0 0 2 
+Heap after push: 0 0 2 4 
+Heap after push: 0 0 2 4 6 
+Heap after push: 0 0 2 4 6 8 
+Heap before pop: 0 0 2 4 6 8 
+Heap before heapify: 8 0 2 4 6 
+Heap before heapify: 0 8 2 4 6 
+Heap after heapify: 0 4 2 8 6 
+Heap after heapify: 0 4 2 8 6 
+Heap before pop: 187651567813136 4 2 8 6 
+Heap before heapify: 6 4 2 8 
+Heap after heapify: 2 4 6 8 
+Heap after push: 0 2 6 8 4 
+Heap before pop: 187651567813136 2 6 8 4 
+Heap before heapify: 4 2 6 8 
+Heap before heapify: 2 4 6 8 
+Heap after heapify: 2 4 6 8 
+Heap after heapify: 2 4 6 8 
+Heap before pop: 187651567817312 4 6 8 
+Heap before heapify: 8 4 6 
+Heap after heapify: 4 8 6 
+Heap after push: 2 4 6 8 
+Heap before pop: 187651567817312 4 6 8 
+Heap before heapify: 8 4 6 
+Heap after heapify: 4 8 6 
+Heap before pop: 187651567813168 8 6 
+Heap before heapify: 6 8 
+Heap after heapify: 6 8 
+Heap before pop: 187651567817344 8 
+Heap before pop: 187651567817424 
+Heap after push: 8 
+Heap before pop: 187651567817424 
+@startuml
+binary "input A" as W0
+binary "input B" as W1
+binary "output" as W2
+
+@0
+W0 is {low,high} 
+W1 is {low,high} 
+W2 is {low,high} 
+
+@0
+W0 is low
+
+W1 is low
+
+@0
+W2 is low
+
+@2
+W1 is high
+
+@2
+W2 is high
+
+@4
+W0 is high
+
+@6
+W0 is low
+
+@8
+W1 is low
+
+@8
+W2 is low
+
+@enduml
+

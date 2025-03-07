@@ -67,7 +67,11 @@ void dealloc(Node* head)
 //   function object struct declarations
 // -----------------------------------------------
 
-
+// struct isEven {
+//     bool operator()(int value) { 
+//         return value % 2 == 0;  // Return true if value is even
+//     }
+// };
 
 
 
@@ -86,8 +90,17 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
-
-
+    Node* smaller;
+    Node* larger;
+    // Node* evens = llfilter(copy, isEven());
+    // cout << "Filtered on is even: ";
+    // print(evens);
+    // print(head);
+    llpivot(head, smaller, larger, 9);
+    cout << "Smaller list: ";
+    print(smaller);
+    cout << "Larger list: ";
+    print(larger);
 
     
     return 0;
